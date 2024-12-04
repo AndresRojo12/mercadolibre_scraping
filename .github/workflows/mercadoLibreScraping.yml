@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  Mercado Libre Scraping:
+  Mercado_Libre_Scraping:
     runs-on: ubuntu-latest
 
     steps:
