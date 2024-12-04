@@ -22,9 +22,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r Evidencia_Aprendizaje_1/requirements.txt
+          pip install -r requirements.txt
 
       # 4. Ejecutar el notebook
       - name: Run Mercado Libre Scraping
         run: |
-          jupyter nbconvert --to notebook --execute Rojo_Mesa_Andres_Analizando_EA1.ipynb --output Rojo_Mesa_Andres_Analizando_EA1.ipynb
+          jupyter nbconvert --to notebook --execute Evidencia_Aprendizaje_1/Rojo_Mesa_Andres_Analizando_EA1.ipynb --output Evidencia_Aprendizaje_1/Rojo_Mesa_Andres_Analizando_EA1.ipynb
