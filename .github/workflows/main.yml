@@ -1,0 +1,30 @@
+name: Run Mercado Libre Scraping
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  Mercado Libre Scraping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. Ejecutar el notebook
+      - name: Run Mercado Libre Scraping
+        run: |
+          jupyter nbconvert --to notebook --execute Rojo_Mesa_Andres_Analizando_EA1.ipynb --output Rojo_Mesa_Andres_Analizando_EA1.ipynb
