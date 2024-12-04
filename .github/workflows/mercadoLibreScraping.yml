@@ -54,4 +54,4 @@ jobs:
       # 4. Ejecutar el notebook
       - name: Run Mercado Libre Scraping
         run: |
-          jupyter nbconvert --to notebook --execute ./Evidencia_Aprendizaje_1/Rojo_Mesa_Andres_Analizando_EA1.ipynb --output ./Evidencia_Aprendizaje_1/Rojo_Mesa_Andres_Analizando_EA1.ipynb
+          jupyter nbconvert --to notebook --execute ./Evidencia_Aprendizaje_1/Rojo_Mesa_Andres_Analizando_EA1.ipynb --output Rojo_Mesa_Andres_Analizando_EA1.ipynb
